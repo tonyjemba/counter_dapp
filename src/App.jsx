@@ -59,4 +59,3 @@ const MyHello = () => {
   );
 };
 
-render(<MyHello />, document.getElementById("app"));
