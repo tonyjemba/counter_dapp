@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { render } from "react-dom";
 import "antd/dist/antd.css";
 import Form from "./voteForm";
 import { Layout, Typography } from "antd";
@@ -30,11 +29,11 @@ const MyHello = () => {
               }}
             >
               <div>
-                <Form color="red" name={"Candidate A"} votes={canA} />
+                <Form color="red" name={"Candidate A"}  />
               </div>
 
               <div>
-                <Form color="blue" name={"Candidate B"} votes={candidateB} />
+                <Form color="blue" name={"Candidate B"}  />
               </div>
             </div>
 
@@ -59,3 +58,4 @@ const MyHello = () => {
   );
 };
 
+export default MyHello;
