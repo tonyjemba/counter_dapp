@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Avatar, Button, Space, Card, Typography } from "antd";
 
-const Form = ({ color, name ,votes}) => {
+const Form = ({ color, name ,votes, vote}) => {
   const { Title } = Typography;
   return (
     <div>
@@ -16,7 +16,7 @@ const Form = ({ color, name ,votes}) => {
             </Avatar>
           </div>
           <div>
-            <Button type="primary">Vote</Button>
+            <Button type="primary" onClick={vote}>Vote</Button>
           </div>
         </Space>
         <div
@@ -28,7 +28,7 @@ const Form = ({ color, name ,votes}) => {
             marginTop: "40px",
           }}
         >
-          <Title level={5}>Total Votes:{votes}</Title>
+          <Title level={5}>Total Votes: {votes}</Title>
         </div>
       </Card>
     </div>
