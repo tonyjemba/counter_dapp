@@ -1,0 +1,6 @@
+service : {
+  getA: () -> (nat) query;
+  getB: () -> (nat) query;
+  voteA: () -> (nat);
+  voteB: () -> (nat);
+}
